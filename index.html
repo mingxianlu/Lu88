@@ -1,95 +1,15 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-tw">
 <head>
-  <meta charset="UTF-8">
-  <title>年份與表格同步捲動</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: sans-serif;
-    }
-    .container {
-      display: flex;
-      height: 650px;
-      overflow: hidden;       /* 讓左右一起捲動 */
-      border: 1px solid #000;
-    }
-    .box {
-      width: 15px;
-      flex-shrink: 0;       /* 固定寬度，不被壓縮 */
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background: #000;  /* 左邊背景固定 */
-      position: sticky;
-      left: -10px;              /* 永遠貼在左邊 */
-      border: 3px solid #000;
-      z-index: 3;
-    }
-    .box div {
-      transform: rotate(-90deg);
-      margin:10px 0;
-      background:#000;
-      color:#fff;
-      border: 2px solid #000;
-    }
-    .left3{
-         position: sticky;
-         display: flex;
-         height:650px;
-         width:240px;
-    }
-    table {
-      border-collapse: collapse;
-      flex: 1;
-    }
-    th, td {
-      border: 1px solid #000;
-      padding: 4px 8px;
-      text-align: center;
-    }
-    thead th {
-      position: sticky;
-      top: 0;
-      background: #fff;     /* 固定表頭 */
-      z-index: 2;
-    }
-    .left3 {
-      border-left:3px solid #000;
-    
-    }
-    #d{padding: 2px 0px;}
-    #w{padding: 2px 0px;}
-    #n{padding:2px;}
-  </style>
+<meta charset="UTF-8">
+<title>表格</title>
 </head>
 <body>
-  <div class="container">
-      <div class="box">
-         <div>2025</div>
-         <div>2024</div>
-         <div>2023</div>
-         <div>2022</div>
-         <div>2021</div>
-         <div>2020</div>
-         <div>2019</div>
-         <div>2018</div>
-         <div>2017</div>
-         <div>2016</div>
-         <div>2015</div>
-         <div>2014</div>
-         <div>2013</div>
-         <div>2012</div>
-         <div>2011</div>
-     </div>
-  <div class="left3">
   <table>
      <thead>
         <tr><th class="date">DATE</th><th class="WEEKDAY">W</th><th colspan=5>NUMBERㄨ5</th></tr>
       </thead>
       <tbody>
-
-
 <tr><td>2025/11/19</td><td>三</td><td></td><td></td><td></td><td></td><td></td></tr>       
 <tr><td>2025/11/18</td><td>二</td><td>14</td><td>24</td><td>31</td><td>36</td><td>37</td></tr>       
 <tr><td>2025/11/17</td><td>一</td><td>04</td><td>07</td><td>16</td><td>16</td><td>29</td></tr>
@@ -8820,3 +8740,4 @@
   </div>
 </body>
 </html>
+
